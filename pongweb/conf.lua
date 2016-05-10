@@ -5,11 +5,11 @@ function love.conf(t)
 	t.screen.width = 1200
 	t.screen.height = 750
 
-	t.window.minwidth = 800
-	t.window.minheight = 600
+	t.screen.minwidth = 800
+	t.screen.minheight = 600
 
-	t.window.resizeable = true
-	t.window.borderless = false
+	--t.window.resizeable = true
+	--t.window.borderless = false
 
 	--Enables console for the game; extremely useful for bug fixing
 	t.console = true
