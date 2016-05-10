@@ -4,20 +4,6 @@ require "PlayerControls"
 require "Main Menu"
 
 function love.load()
---Images for the game
-  playerBall = love.graphics.newImage("Images/Ball.png")
-  bar = love.graphics.newImage("Images/Bar.png")
-  playButton = love.graphics.newImage("Images/Play.png")
-  controlsButton = love.graphics.newImage("Images/Controls.png")
-  mouse = love.graphics.newImage("Images/Mouse.png")
-  wasd = love.graphics.newImage("Images/WASD.png")
-  arrowKeys = love.graphics.newImage("Images/ArrowKeys.png")
-  highlightBox = love.graphics.newImage("Images/HighlightBox.png")
-  controlsMenu = love.graphics.newImage("Images/ControlsMenu.png")
-  computer = love.graphics.newImage("Images/Computer.png")
-  barsWin = love.graphics.newImage("Images/BarsWin.png")
-  ballWins = love.graphics.newImage("Images/BallWins.png")
-
 
 menu = true
 singlePlayer = false
@@ -43,7 +29,9 @@ gameStarted = true
   bar2 = {
   x = 25,
   y = 250
-  }
+}
+
+loadResources()
 
 end
 
@@ -82,6 +70,22 @@ end
 else
 love.mousereleased(x, y, button)
 end
+end
+
+function loadResources()
+  --Images for the game
+  playerBall = love.graphics.newImage("Images/Ball.png")
+  bar = love.graphics.newImage("Images/Bar.png")
+  playButton = love.graphics.newImage("Images/Play.png")
+  controlsButton = love.graphics.newImage("Images/Controls.png")
+  mouse = love.graphics.newImage("Images/Mouse.png")
+  wasd = love.graphics.newImage("Images/WASD.png")
+  arrowKeys = love.graphics.newImage("Images/ArrowKeys.png")
+  highlightBox = love.graphics.newImage("Images/HighlightBox.png")
+  controlsMenu = love.graphics.newImage("Images/ControlsMenu.png")
+  computer = love.graphics.newImage("Images/Computer.png")
+  barsWin = love.graphics.newImage("Images/BarsWin.png")
+  ballWins = love.graphics.newImage("Images/BallWins.png")
 end
 
 function love.draw()
