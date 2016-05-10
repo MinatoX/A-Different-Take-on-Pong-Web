@@ -5,8 +5,8 @@ function love.conf(t)
 	t.screen.width = 1200
 	t.screen.height = 750
 
-	t.screen.minwidth = 800
-	t.screen.minheight = 600
+	--t.screen.minwidth = 800
+	--t.screen.minheight = 600
 
 	--t.window.resizeable = true
 	--t.window.borderless = false
