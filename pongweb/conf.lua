@@ -2,8 +2,8 @@ function love.conf(t)
 	
 	--Screen settings
 	t.title = "A Different Take on Pong"
-	--t.window.width = 1200
-	--t.window.height = 750
+	t.window.width = 1200
+	t.window.height = 750
 
 	t.window.minwidth = 800
 	t.window.minheight = 600
